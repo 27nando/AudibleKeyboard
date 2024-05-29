@@ -1,7 +1,10 @@
+let width = window.innerWidth;
+let height = window.innerHeight;
+
 function setup() {
- // put setup code here
+  canvas = createCanvas(width, height);
 }
 
 function draw() {
-  // put drawing code here
+  background(204, 255, 229);
 }
