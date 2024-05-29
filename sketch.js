@@ -1,8 +1,28 @@
 let width = window.innerWidth;
 let height = window.innerHeight;
 
+let arcade;
+let bonus1;
+let bonus2;
+let fairy;
+let lock;
+let magic;
+let notify;
+let retro;
+let score;
+
 function setup() {
   canvas = createCanvas(width, height);
+
+  arcade = loadSound('arcade.wav');
+  bonus1 = loadSound('bonus1.wav');
+  bonus2 = loadSound('bonus2.wav');
+  fairy = loadSound('fairy.wav');
+  lock = loadSound('lock.wav');
+  magic = loadSound('magic.wav');
+  notify = loadSound('notify.wav');
+  retro = loadSound('retro.wav');
+  score = loadSound('score.wav');
 }
 
 function draw() {
