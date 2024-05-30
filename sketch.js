@@ -28,35 +28,73 @@ function setup() {
   retro = loadSound('retro.wav');
   score = loadSound('score.wav');
 
-  let b1 = new Button(width/3, height/3.5, 200, 80, color(255, 128, 0), color(250, 149, 0), arcade);
-  let b2 = new Button(width/2, height/3.5, 200, 80, color(210, 91, 32), color(235, 100, 36), bonus1);
-  let b3 = new Button(2*width/3, height/3.5, 200, 80, color(205, 125, 208), color(232, 142, 237), bonus2);
+  let q = new Button(width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let w = new Button(2*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), bonus1);
+  let e = new Button(3*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), bonus2);
+  let r = new Button(4*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let t = new Button(5*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let y = new Button(6*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let u = new Button(7*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let i = new Button(8*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let o = new Button(9*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
+  let p = new Button(10*width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), arcade);
 
-  let b4 = new Button(width/3, height/2, 200, 80, color(205, 125, 208), color(232, 142, 237), fairy);
-  let b5 = new Button(width/2, height/2, 200, 80, color(255, 128, 0), color(250, 149, 0), lock);
-  let b6 = new Button(2*width/3, height/2, 200, 80, color(210, 91, 32), color(235, 100, 36), magic);
+  let a = new Button(width/9, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let s = new Button(20*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), lock);
+  let d = new Button(29*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), magic);
+  let f = new Button(38*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let g = new Button(47*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let h = new Button(56*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let j = new Button(65*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let k = new Button(74*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
+  let l = new Button(83*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), fairy);
 
-  let b7 = new Button(width/3, 2*height/2.8, 200, 80, color(210, 91, 32), color(235, 100, 36), notify);
-  let b8 = new Button(width/2, 2*height/2.8, 200, 80, color(205, 125, 208), color(232, 142, 237), retro);
-  let b9 = new Button(2*width/3, 2*height/2.8, 200, 80, color(255, 128, 0), color(250, 149, 0), score);
+  let z = new Button(width/6, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), notify);
+  let x = new Button(17*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), retro);
+  let c = new Button(23*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), score);
+  let v = new Button(29*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), notify);
+  let b = new Button(35*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), notify);
+  let n = new Button(41*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), notify);
+  let m = new Button(47*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), notify);
 
-  buttons_top.push(b1);
-  buttons_top.push(b2);
-  buttons_top.push(b3);
+  buttons_top.push(q);
+  buttons_top.push(w);
+  buttons_top.push(e);
+  buttons_top.push(r);
+  buttons_top.push(t);
+  buttons_top.push(y);
+  buttons_top.push(u);
+  buttons_top.push(i);
+  buttons_top.push(o);
+  buttons_top.push(p);
 
-  buttons_middle.push(b4);
-  buttons_middle.push(b5);
-  buttons_middle.push(b6);
+  buttons_middle.push(a);
+  buttons_middle.push(s);
+  buttons_middle.push(d);
+  buttons_middle.push(f);
+  buttons_middle.push(g);
+  buttons_middle.push(h);
+  buttons_middle.push(j);
+  buttons_middle.push(k);
+  buttons_middle.push(l);
 
-  buttons_bottom.push(b7);
-  buttons_bottom.push(b8);
-  buttons_bottom.push(b9);
+  buttons_bottom.push(z);
+  buttons_bottom.push(x);
+  buttons_bottom.push(c);
+  buttons_bottom.push(v);
+  buttons_bottom.push(b);
+  buttons_bottom.push(n);
+  buttons_bottom.push(m);
 }
 
 function mousePressed() {
   for (let i = 0; i < buttons_top.length; i++) {
     buttons_top[i].clicked(mouseX, mouseY);
+  }
+  for (let i = 0; i < buttons_middle.length; i++) {
     buttons_middle[i].clicked(mouseX, mouseY);
+  }
+  for (let i = 0; i < buttons_bottom.length; i++) {
     buttons_bottom[i].clicked(mouseX, mouseY);
   }
 }
@@ -64,7 +102,11 @@ function mousePressed() {
 function mouseReleased() {
   for (let i = 0; i < buttons_top.length; i++) {
     buttons_top[i].y = height/3.5;
+  }
+  for (let i = 0; i < buttons_middle.length; i++) {
     buttons_middle[i].y = height/2;
+  }
+  for (let i = 0; i < buttons_bottom.length; i++) {
     buttons_bottom[i].y = 2*height/2.8;
   }
 }
@@ -74,7 +116,11 @@ function draw() {
   noStroke();
   for (let i = 0; i < buttons_top.length; i++) {
     buttons_top[i].show(); 
+  }
+  for (let i = 0; i < buttons_middle.length; i++) {
     buttons_middle[i].show();
+  }
+  for (let i = 0; i < buttons_bottom.length; i++) {
     buttons_bottom[i].show();
   }
 }
@@ -94,20 +140,20 @@ class Button {
     noStroke();
 
     fill(this.color); 
-    rect((this.x - 100), this.y, this.w, 50);
+    rect((this.x - 50), this.y, this.w, 25);
 
     fill(this.accent); 
     ellipse(this.x, this.y, this.w, this.h);
 
     fill(this.color); 
-    arc(this.x, (this.y + 50), this.w, this.h, TWO_PI, PI);
+    arc(this.x, (this.y + 25), this.w, this.h, TWO_PI, PI);
   }
 
   clicked(px, py) {
     let d = dist(px, py, this.x, this.y);
 
-    if (d < this.w / 2) {
-      this.y = this.y + 10;
+    if (d < this.w/2) {
+      this.y = this.y - 10;
       this.song.play();
     }
   }
