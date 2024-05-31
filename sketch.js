@@ -15,6 +15,14 @@ let J;
 let K;
 let L;
 
+let Z;
+let X;
+let C;
+let V;
+let B;
+let N;
+let M;
+
 function setup() {
   canvas = createCanvas(width, height);
 
@@ -27,6 +35,14 @@ function setup() {
   J = loadSound('J.mp3');
   K = loadSound('K.mp3');
   L = loadSound('L.mp3');
+
+  Z = loadSound('Z.mp3');
+  X = loadSound('X.mp3');
+  C = loadSound('C.mp3');
+  V = loadSound('V.mp3');
+  B = loadSound('B.mp3');
+  N = loadSound('N.mp3');
+  M = loadSound('M.mp3');
 
 
   let q = new Button(width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), A);
@@ -50,13 +66,13 @@ function setup() {
   let k = new Button(74*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), K);
   let l = new Button(83*width/99, 2*height/3, 100, 40, color(205, 125, 208), color(232, 142, 237), L);
 
-  let z = new Button(width/6, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let x = new Button(17*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let c = new Button(23*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let v = new Button(29*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let b = new Button(35*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let n = new Button(41*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
-  let m = new Button(47*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), A);
+  let z = new Button(width/6, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), Z);
+  let x = new Button(17*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), X);
+  let c = new Button(23*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), C);
+  let v = new Button(29*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), V);
+  let b = new Button(35*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), B);
+  let n = new Button(41*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), N);
+  let m = new Button(47*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), M);
 
   buttons_top.push(q);
   buttons_top.push(w);
