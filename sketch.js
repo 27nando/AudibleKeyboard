@@ -34,6 +34,8 @@ let B;
 let N;
 let M;
 
+let space;
+
 function setup() {
   canvas = createCanvas(width, height);
 
@@ -65,6 +67,7 @@ function setup() {
   B = loadSound('B.mp3');
   N = loadSound('N.mp3');
   M = loadSound('M.mp3');
+  space = loadSound('space.wav')
 
 
   let q = new Button(width/11, height/2, 100, 40, color(255, 128, 0), color(250, 149, 0), Q, 'Q');
@@ -96,6 +99,8 @@ function setup() {
   let n = new Button(41*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), N, 'N');
   let m = new Button(47*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), M, 'M');
 
+  let Space = new Button(53*width/66, 5*height/6, 100, 40, color(210, 91, 32), color(235, 100, 36), space, ' ')
+
   buttons_top.push(q);
   buttons_top.push(w);
   buttons_top.push(e);
@@ -124,6 +129,9 @@ function setup() {
   buttons_bottom.push(b);
   buttons_bottom.push(n);
   buttons_bottom.push(m);
+  buttons_bottom.push(Space);
+
+
 }
 
 function mousePressed() {
@@ -162,9 +170,12 @@ function draw() {
   for (let i = 0; i < buttons_bottom.length; i++) {
     buttons_bottom[i].show();
   }
+  bar.show();
 }
 
 class Button {
+  wid=width;
+  hei=height;
   constructor(x, y, w, h, color, accent, song, letter) {
     this.x = x;
     this.y = y;
@@ -188,9 +199,11 @@ class Button {
     fill(this.color); 
     arc(this.x, (this.y + 25), this.w, this.h, TWO_PI, PI);
 
-    fill(204, 255, 229); 
+    fill(255); 
     textAlign(CENTER, CENTER); 
-    textSize(12); 
+    textSize(20); 
+    textFont('American Typewriter');
+    textStyle(BOLD);
     text(this.letter, this.x, this.y);
   }
 
@@ -200,7 +213,14 @@ class Button {
     if (d < this.w/2) {
       this.y = this.y + 10;
       this.song.play();
+      fill(0);  
+      textSize(50); 
+      textFont('American Typewriter');
+      textStyle(BOLD);
+      text(this.letter, width/4, height/4);
+      width=width+150;
     }
   }
 }
+
 
